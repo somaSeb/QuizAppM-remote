@@ -12,4 +12,10 @@ bookmarkButton.addEventListener("click", () => {
 
 // answer Feature
 
+const answerButton = document.querySelector('[data-js="answer-button"]')
+
+function showAnswer() {
+  
+}
+
 
