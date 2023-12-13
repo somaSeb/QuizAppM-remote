@@ -1,6 +1,6 @@
 console.clear();
 
-// bookmarkButton Toggler 
+// bookmarkButton Feature 
 
 const bookmarkButton = document.querySelector('[data-js="bookmark-button"]');
 
@@ -10,5 +10,6 @@ bookmarkButton.addEventListener("click", () => {
 });
 
 
+// answer Feature
 
 
