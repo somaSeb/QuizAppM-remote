@@ -1,6 +1,6 @@
 console.clear();
 
-// bookmarkButton Feature 
+// bookmarkButton feature 
 
 const bookmarkButton = document.querySelector('[data-js="bookmark-button"]');
 
@@ -10,12 +10,18 @@ bookmarkButton.addEventListener("click", () => {
 });
 
 
-// answer Feature
+// answer feature
 
-const answerButton = document.querySelector('[data-js="answer-button"]')
+const answerButtonInacive = document.querySelector('[data-js="answer-button-inactive"]')
+const answerButtonActive = document.querySelector('[data-js="answer-button-active"]')
 
-function showAnswer() {
-  
-}
+
+answerButtonInacive.addEventListener("click", () => {
+  answerButtonActive.classList.toggle("card__answer--active");
+
+  return  answerButtonActive.classList.contains("card__answer--active") ? 
+  answerButtonActive = "Hide" :
+  answerButtonInacive = "Show"
+})
 
 
