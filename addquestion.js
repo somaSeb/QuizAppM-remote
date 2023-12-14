@@ -81,14 +81,26 @@ answerInputArea.addEventListener("input", (event) => {
 
 // answer feature
 
-const answerButtonInactive = document.querySelector('[data-js="answer-button-inactive"]')
-const answerButtonActive = document.querySelector('[data-js="answer-button-active"]')
+// const answerButtonInactive = document.querySelector('[data-js="answer-button-inactive"]')
+// const answerButtonActive = document.querySelector('[data-js="answer-button-active"]')
 
 
-answerButtonInactive.addEventListener("click", () => {
-  answerButtonActive.classList.toggle("card__answer--active");
+// answerButtonInactive.addEventListener("click", () => {
+//   answerButtonActive.classList.toggle("card__answer--active");
 
-  return  answerButtonActive.classList.contains("card__answer--active") ? 
-  answerButtonActive = "Hide" :
-  answerButtonInactive = "Show"
-})
+//   return  answerButtonActive.classList.contains("card__answer--active") ? 
+//   answerButtonActive :
+//   answerButtonInactive 
+// })
+
+const answerButtonInactive = document.querySelector('[data-js="answer-button-inactive"]');
+const answerButtonActive = document.querySelector('[data-js="answer-button-active"]');
+
+
+  answerButtonInactive.addEventListener("click", () => {
+    answerButtonActive.classList.toggle("card__answer--active");
+
+    return  answerButtonActive.classList.contains("card__answer--active") ? 
+    answerButtonActive :
+    answerButtonInactive 
+  });

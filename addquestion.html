@@ -46,7 +46,7 @@
           rows="2"
           cols="50"
           maxlength="20"
-          placeholder="Enter your answer here"
+          placeholder="Enter the answer here"
         ></textarea>
         <p class="remaining-characters">
           <span data-js="remaining-characters-answer">20</span> characters left
@@ -59,7 +59,10 @@
           type="text" 
           name="tag" 
           id="tag" 
-          placeholder="#" />
+          placeholder="#" 
+          pattern="#.*" 
+          required
+          title="Input must start with a # character" />
         </fieldset>
 
         <button type="submit">Submit</button>
@@ -87,14 +90,14 @@
             </svg>
           </a>
         </li>
-        <li class="navigation__list-item navigation__list-item--active">
+        <li class="navigation__list-item">
           <a
             class="navigation__link"
             href="/bookmarks.html"
             aria-label="go to bookmarks page"
           >
             <svg
-              xmlns="http://www.w3.org/2000/svg"
+              class
               height="24px"
               viewbox="0 0 24 24"
               width="24px"
@@ -105,7 +108,7 @@
             </svg>
           </a>
         </li>
-        <li class="navigation__list-item">
+        <li class="navigation__list-item navigation__list-item--active">
           <a
             class="navigation__link"
             href="/addquestion.html"
@@ -117,9 +120,7 @@
               viewbox="0 0 24 24"
               width="24px"
             >
-              <path
-                d="M12 6c1.1 0 2 .9 2 2s-.9 2-2 2-2-.9-2-2 .9-2 2-2m0 9c2.7 0 5.8 1.29 6 2v1H6v-.99c.2-.72 3.3-2.01 6-2.01m0-11C9.79 4 8 5.79 8 8s1.79 4 4 4 4-1.79 4-4-1.79-4-4-4zm0 9c-2.67 0-8 1.34-8 4v3h16v-3c0-2.66-5.33-4-8-4z"
-              />
+              <image href="svg/plus-square-svgrepo-com.svg" height="24px" width="24px" />
             </svg>
           </a>
         </li>
@@ -143,5 +144,7 @@
         </li>
       </ul>
     </nav>
+
+
   </body>
 </html>

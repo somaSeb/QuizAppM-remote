@@ -20,8 +20,8 @@ answerButtonInacive.addEventListener("click", () => {
   answerButtonActive.classList.toggle("card__answer--active");
 
   return  answerButtonActive.classList.contains("card__answer--active") ? 
-  answerButtonActive = "Hide" :
-  answerButtonInacive = "Show"
+  answerButtonActive  :
+  answerButtonInacive 
 })
 
 
